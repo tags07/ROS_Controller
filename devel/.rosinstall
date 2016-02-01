@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/viki/ROS_Controller/devel/setup.sh

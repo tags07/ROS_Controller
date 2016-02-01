@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="msgs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/controller/libs/msgs.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

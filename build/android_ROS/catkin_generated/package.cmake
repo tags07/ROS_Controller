@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "android_ROS")
+set(android_ROS_MAINTAINER "viki <viki@todo.todo>")
+set(android_ROS_DEPRECATED "")
+set(android_ROS_VERSION "0.1.0")
+set(android_ROS_BUILD_DEPENDS "android_core" "rosjava_build_tools" "rosjava_core" "std_msgs")
+set(android_ROS_RUN_DEPENDS )
+set(android_ROS_BUILDTOOL_DEPENDS "catkin")

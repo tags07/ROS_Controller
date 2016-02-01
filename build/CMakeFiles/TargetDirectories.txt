@@ -1,0 +1,10 @@
+/home/viki/ROS_Controller/build/android_ROS/CMakeFiles/_catkin_empty_exported_target.dir
+/home/viki/ROS_Controller/build/CMakeFiles/clean_test_results.dir
+/home/viki/ROS_Controller/build/CMakeFiles/doxygen.dir
+/home/viki/ROS_Controller/build/android_ROS/CMakeFiles/gradle-android_ROS.dir
+/home/viki/ROS_Controller/build/android_ROS/CMakeFiles/gradle-clean.dir
+/home/viki/ROS_Controller/build/android_ROS/CMakeFiles/gradle-clean-android_ROS.dir
+/home/viki/ROS_Controller/build/gtest/CMakeFiles/gtest.dir
+/home/viki/ROS_Controller/build/gtest/CMakeFiles/gtest_main.dir
+/home/viki/ROS_Controller/build/CMakeFiles/run_tests.dir
+/home/viki/ROS_Controller/build/CMakeFiles/tests.dir

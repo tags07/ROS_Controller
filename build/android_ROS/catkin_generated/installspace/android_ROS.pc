@@ -1,0 +1,8 @@
+prefix=/home/viki/ROS_Controller/install
+
+Name: android_ROS
+Description: Description of android_ROS
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/viki/ROS_Controller/install/lib 
+Requires: 
