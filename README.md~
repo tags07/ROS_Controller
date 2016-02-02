@@ -6,5 +6,4 @@ http://wiki.ros.org/android/Tutorials/indigo/Installation%20-%20ROS%20Developmen
 2. Created own project, which depends on android_10 <br>
 http://wiki.ros.org/rosjava_build_tools/Tutorials/indigo/Creating%20Android%20Packages <br>
 
-3. Created custom message jars<br>
-http://wiki.ros.org/rosjava/Tutorials/hydro/Unofficial%20Messages
+3.
