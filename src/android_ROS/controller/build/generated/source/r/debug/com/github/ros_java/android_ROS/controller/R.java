@@ -19,23 +19,24 @@ public final class R {
         public static final int warn=0x7f020005;
     }
     public static final class id {
-        public static final int TextViewX1=0x7f070002;
-        public static final int TextViewX2=0x7f070003;
-        public static final int TextViewY1=0x7f070004;
-        public static final int TextViewY2=0x7f070005;
-        public static final int advancedOptions=0x7f07000b;
-        public static final int advanced_checkBox=0x7f07000a;
-        public static final int dualjoystickView=0x7f070001;
-        public static final int interfaceLabel=0x7f07000c;
-        public static final int master_chooser_cancel=0x7f070010;
-        public static final int master_chooser_new_master_button=0x7f07000e;
-        public static final int master_chooser_new_private_master_button=0x7f07000f;
-        public static final int master_chooser_ok=0x7f070009;
-        public static final int master_chooser_qr_code_button=0x7f070008;
-        public static final int master_chooser_uri=0x7f070007;
-        public static final int networkInterfaces=0x7f07000d;
+        public static final int TextViewX1=0x7f070003;
+        public static final int TextViewX2=0x7f070004;
+        public static final int TextViewY1=0x7f070005;
+        public static final int TextViewY2=0x7f070006;
+        public static final int advancedOptions=0x7f07000c;
+        public static final int advanced_checkBox=0x7f07000b;
+        public static final int dualjoystickView=0x7f070002;
+        public static final int image=0x7f070001;
+        public static final int interfaceLabel=0x7f07000d;
+        public static final int master_chooser_cancel=0x7f070011;
+        public static final int master_chooser_new_master_button=0x7f07000f;
+        public static final int master_chooser_new_private_master_button=0x7f070010;
+        public static final int master_chooser_ok=0x7f07000a;
+        public static final int master_chooser_qr_code_button=0x7f070009;
+        public static final int master_chooser_uri=0x7f070008;
+        public static final int networkInterfaces=0x7f07000e;
         public static final int text=0x7f070000;
-        public static final int textView=0x7f070006;
+        public static final int textView=0x7f070007;
     }
     public static final class layout {
         public static final int main=0x7f040000;

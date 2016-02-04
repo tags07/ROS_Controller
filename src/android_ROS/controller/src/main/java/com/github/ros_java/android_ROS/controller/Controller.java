@@ -4,8 +4,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
+import org.ros.android.BitmapFromImage;
 import org.ros.android.MessageCallable;
 import org.ros.android.RosActivity;
+import org.ros.android.view.RosImageView;
 import org.ros.android.view.RosTextView;
 import org.ros.node.NodeConfiguration;
 import org.ros.node.NodeMainExecutor;
@@ -16,10 +18,13 @@ import Joystick.DualJoystickView;
 import Joystick.JoystickMovedListener;
 import msgs.Ball;
 import msgs.ImageData;
+import sensor_msgs.Image;
 
 public class Controller extends RosActivity
 {
     private RosTextView<ImageData> rosTextView;
+    private RosImageView<Image> rosImageView;
+
     private Publisherr talker;
     TextView txtX1, txtY1;
     TextView txtX2, txtY2;
@@ -52,6 +57,7 @@ public class Controller extends RosActivity
 
         rosTextView = (RosTextView<ImageData>) findViewById(R.id.text);
         rosTextView.setTopicName("/vision_data");
+
         rosTextView.setMessageType(ImageData._TYPE);
         rosTextView.setMessageToStringCallable(new MessageCallable<String, ImageData>() {
             @Override
@@ -61,12 +67,19 @@ public class Controller extends RosActivity
 
                 if (pallid.size() > 0) {
                     joined = String.valueOf(pallid.get(0).getDistance());
+                    Log.d("Balls", "aa" + joined.length());
                 }
-                Log.d("Balls", "" + joined.length());
+
 
                 return joined;
             }
         });
+
+        rosImageView = (RosImageView<sensor_msgs.Image>)findViewById(R.id.image);
+        rosImageView.setTopicName("/front_cam/image");
+        rosImageView.setMessageType("sensor_msgs/Image");
+        rosImageView.setMessageToBitmapCallable(new BitmapFromImage());
+
 
     }
 
@@ -125,9 +138,11 @@ public class Controller extends RosActivity
         // activity.
         NodeConfiguration nodeConfiguration = NodeConfiguration.newPublic(getRosHostname());
         nodeConfiguration.setMasterUri(getMasterUri());
+        nodeMainExecutor.execute(rosTextView, nodeConfiguration);
+        nodeMainExecutor.execute(rosImageView, nodeConfiguration);
         nodeMainExecutor.execute(talker, nodeConfiguration);
         // The RosTextView is also a NodeMain that must be executed in order to
         // start displaying incoming messages.
-        nodeMainExecutor.execute(rosTextView, nodeConfiguration);
+
     }
 }

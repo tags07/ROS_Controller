@@ -5,8 +5,6 @@
 
 package com.github.ros_java.android_ROS.controller;
 
-import android.util.Log;
-
 import org.ros.concurrent.CancellableLoop;
 import org.ros.namespace.GraphName;
 import org.ros.node.AbstractNodeMain;
@@ -61,14 +59,15 @@ public class Publisherr extends AbstractNodeMain {
 
     public void set_movement(int x, int y) {
         this.speed = (float) Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2))/15;
-
+        /*
         Log.d("X Angle", "" + x);
         Log.d("Y Angle", "" + y);
+        */
         double angle1 = Math.atan2(10, 0);
         double angle2 = Math.atan2(y, x );
         float degToRad = (float) (-1*(angle1 - angle2));
         this.angle = degToRad;
-        Log.d("Angle", "" + angle);
+        //Log.d("Angle", "" + angle);
 
 
     }

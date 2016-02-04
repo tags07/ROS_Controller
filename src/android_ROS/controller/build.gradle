@@ -39,11 +39,11 @@ dependencies {
 apply plugin: 'com.android.application'
 
 android {
-  compileSdkVersion 10
+  compileSdkVersion 15
   defaultConfig {
-    minSdkVersion 10
+    minSdkVersion 15
     applicationId "com.github.ros_java.android_ROS"
-    targetSdkVersion 10
+    targetSdkVersion 15
     versionCode 1
     versionName "1.0"
   }
