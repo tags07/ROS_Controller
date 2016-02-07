@@ -8,10 +8,10 @@ package org.ros.android.android_10;
 
 public final class R {
 	public static final class drawable {
-		public static final int error = 0x7f020002;
-		public static final int ok = 0x7f020003;
-		public static final int stale = 0x7f020004;
-		public static final int warn = 0x7f020005;
+		public static final int error = 0x7f020006;
+		public static final int ok = 0x7f02000e;
+		public static final int stale = 0x7f020019;
+		public static final int warn = 0x7f02001b;
 	}
 	public static final class id {
 		public static final int advancedOptions = 0x7f07000c;

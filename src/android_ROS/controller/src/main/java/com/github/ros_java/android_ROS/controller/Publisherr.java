@@ -30,7 +30,7 @@ public class Publisherr extends AbstractNodeMain {
     }
 
     public GraphName getDefaultNodeName() {
-        return GraphName.of("rosjava_tutorial_pubsub/talker");
+        return GraphName.of("erki_hindo/talker");
     }
 
     public void onStart(ConnectedNode connectedNode) {

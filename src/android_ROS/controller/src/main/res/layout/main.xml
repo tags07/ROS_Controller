@@ -12,7 +12,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textSize="30dip" />
-    <org.ros.android.view.RosImageView
+    <com.github.ros_java.android_ROS.controller.RosImageView2
         android:id="@+id/image"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"

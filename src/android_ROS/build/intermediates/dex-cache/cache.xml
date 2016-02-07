@@ -2,39 +2,25 @@
 <items version="2" >
 
     <item
-        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_messages/diagnostic_msgs/1.11.7/119c52755000fa22288dd666c4185f54ca737410/diagnostic_msgs-1.11.7.jar"
+        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_messages/rosgraph_msgs/1.11.1/e3d30a4a74f6282d014f7fd9828f5131bb3a9915/rosgraph_msgs-1.11.1.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="119c52755000fa22288dd666c4185f54ca737410">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/diagnostic_msgs-1.11.7-5817f26639205b92944d998b8cdf6114796851b4.jar" />
-    </item>
-    <item
-        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.apache.commons/com.springsource.org.apache.commons.codec/1.3.0/f8690570eb0913d750262bb4223eed30b0d619ed/com.springsource.org.apache.commons.codec-1.3.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="f8690570eb0913d750262bb4223eed30b0d619ed">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/com.springsource.org.apache.commons.codec-1.3.0-32474c049341aaf036383ce7b0dcf0cba0d4e344.jar" />
+        sha1="e3d30a4a74f6282d014f7fd9828f5131bb3a9915">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/rosgraph_msgs-1.11.1-7746a4ff6e990d62aaa2a4d6651d745ece31ae97.jar" />
     </item>
     <item
         jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.apache.commons/com.springsource.org.apache.commons.httpclient/3.1.0/c493a925a091ac3d8f449d9265fe12482dabb2a7/com.springsource.org.apache.commons.httpclient-3.1.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="c493a925a091ac3d8f449d9265fe12482dabb2a7">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/com.springsource.org.apache.commons.httpclient-3.1.0-093a60a2445c74d63d125b3a30c1013ff7dce995.jar" />
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/com.springsource.org.apache.commons.httpclient-3.1.0-093a60a2445c74d63d125b3a30c1013ff7dce995.jar" />
     </item>
     <item
-        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_messages/actionlib_msgs/1.11.7/9ec983bb2eaaa20552edeb3544e04a45308fe71b/actionlib_msgs-1.11.7.jar"
+        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_core/apache_xmlrpc_common/0.2.1/a956178368232d0a9fccf501a8c91aacf2ac0256/apache_xmlrpc_common-0.2.1.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="9ec983bb2eaaa20552edeb3544e04a45308fe71b">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/actionlib_msgs-1.11.7-f68083f5da1e34a105a58cb0c695895f9724cdd5.jar" />
-    </item>
-    <item
-        jar="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/exploded-aar/org.ros.android_core/android_10/0.2.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="a60aa70c71db04f876bb727268dfba54c7e2f312">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/classes-1d833c9d6231bb3eff5b83f79a8ab44734c9f5f0.jar" />
+        sha1="a956178368232d0a9fccf501a8c91aacf2ac0256">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/apache_xmlrpc_common-0.2.1-e9647e150d682db339e16d758c598f65f409012a.jar" />
     </item>
     <item
         jar="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/exploded-aar/com.github.rosjava.android_extras/gingerbread/0.2.0/classes.jar"
@@ -44,25 +30,11 @@
         <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/classes-4a21fa6c269f748a134125632433ec874cca2209.jar" />
     </item>
     <item
-        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_messages/tf2_msgs/0.5.9/b2fea11356b0f4ce744f30ac76e987b531b6028e/tf2_msgs-0.5.9.jar"
+        jar="/opt/ros/indigo/share/maven/org/ros/rosjava_bootstrap/gradle_plugins/0.2.1/gradle_plugins-0.2.1.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="b2fea11356b0f4ce744f30ac76e987b531b6028e">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/tf2_msgs-0.5.9-74d8f117259a265b1501cb3a0bb2d42989bfb24c.jar" />
-    </item>
-    <item
-        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_messages/visualization_msgs/1.11.7/3a91db88f91333643e2cde4b16e13b9cd46f7700/visualization_msgs-1.11.7.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="3a91db88f91333643e2cde4b16e13b9cd46f7700">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/visualization_msgs-1.11.7-305904dc6caa7759df21cce0998e0e2067f6616e.jar" />
-    </item>
-    <item
-        jar="/home/viki/ROS_Controller/src/android_ROS/controller/libs/joystickview.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="3e6510065a4867c6d4a9e2410873bbe8baa7a860">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/joystickview-807f23d40a7f7bc1085e54bd39f2db27991a2901.jar" />
+        sha1="c6d8a3d55051f77218b87b257cdeea47d2eca638">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/gradle_plugins-0.2.1-3ca41087091e8a6d62524f61103437f41ca87422.jar" />
     </item>
     <item
         jar="/home/viki/rosjava/devel/share/maven/org/ros/rosjava_core/rosjava_geometry/0.2.1/rosjava_geometry-0.2.1.jar"
@@ -72,13 +44,6 @@
         <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/rosjava_geometry-0.2.1-33646d766c2816bd5488001005aee88b2438cceb.jar" />
     </item>
     <item
-        jar="/home/viki/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/1.3.9/40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf/jsr305-1.3.9.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/jsr305-1.3.9-f150c0af8198a40efb153f99eab46b92ef6d92b5.jar" />
-    </item>
-    <item
         jar="/home/viki/rosjava/devel/share/maven/org/ros/rosjava_core/rosjava/0.2.1/rosjava-0.2.1.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -86,46 +51,18 @@
         <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/rosjava-0.2.1-5860701a02e32e3bac3084d3e31d489d81f71d8c.jar" />
     </item>
     <item
-        jar="/home/viki/rosjava/devel/share/maven/org/ros/rosjava_bootstrap/gradle_plugins/0.2.1/gradle_plugins-0.2.1.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="7a831b4b8bbfa01c81433fc8e8da6c6485482926">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/gradle_plugins-0.2.1-d6d3b747b5f94c1c3788fbd5681ab5d6ed6dce63.jar" />
-    </item>
-    <item
-        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_messages/geometry_msgs/1.11.7/bb9ca9051697047f8ebacae69956aa562d43b0e1/geometry_msgs-1.11.7.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="bb9ca9051697047f8ebacae69956aa562d43b0e1">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/geometry_msgs-1.11.7-81582f496ce032f8d47e9adf203d3f1e9f710ded.jar" />
-    </item>
-    <item
         jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.apache.commons/com.springsource.org.apache.commons.io/1.4.0/51097cd000ec88214ff181c9f059947de1cf4a35/com.springsource.org.apache.commons.io-1.4.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="51097cd000ec88214ff181c9f059947de1cf4a35">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/com.springsource.org.apache.commons.io-1.4.0-0b905629d81688ae793b96b74ba9cb1841cd26cb.jar" />
-    </item>
-    <item
-        jar="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-59e79cfd828cfc3e9508db66a8ba7e99359c1404.jar" />
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/com.springsource.org.apache.commons.io-1.4.0-0b905629d81688ae793b96b74ba9cb1841cd26cb.jar" />
     </item>
     <item
         jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_messages/nav_msgs/1.11.7/13b7b4aae1bf791c4f3a3a9ef68e58015cff1152/nav_msgs-1.11.7.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="13b7b4aae1bf791c4f3a3a9ef68e58015cff1152">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/nav_msgs-1.11.7-dd01f3bcb08a5cf3ac8dac91901cbe63a31d739b.jar" />
-    </item>
-    <item
-        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.apache.ws.commons/ws-commons-util/1.0.1/126e80ff798fece634bc94e61f8be8a8da00be60/ws-commons-util-1.0.1.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="126e80ff798fece634bc94e61f8be8a8da00be60">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/ws-commons-util-1.0.1-8509bca48d61ebab67c0b7e3c738d460527d1502.jar" />
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/nav_msgs-1.11.7-dd01f3bcb08a5cf3ac8dac91901cbe63a31d739b.jar" />
     </item>
     <item
         jar="/home/viki/rosjava/devel/share/maven/org/ros/rosjava_bootstrap/message_generation/0.2.1/message_generation-0.2.1.jar"
@@ -142,39 +79,39 @@
         <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/rosgraph_msgs-1.11.1-dd6f2e296deafee77fc5a10c04cdfdde54f22b64.jar" />
     </item>
     <item
-        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_messages/sensor_msgs/1.11.7/5f0b7ac0b5d341b9b37f408ab45c4a2e4c80068e/sensor_msgs-1.11.7.jar"
+        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.apache.ws.commons/ws-commons-util/1.0.1/126e80ff798fece634bc94e61f8be8a8da00be60/ws-commons-util-1.0.1.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="5f0b7ac0b5d341b9b37f408ab45c4a2e4c80068e">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/sensor_msgs-1.11.7-cea20011e2376e817d449918a05c8d245603a55d.jar" />
+        sha1="126e80ff798fece634bc94e61f8be8a8da00be60">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/ws-commons-util-1.0.1-8509bca48d61ebab67c0b7e3c738d460527d1502.jar" />
     </item>
     <item
         jar="/home/viki/.gradle/caches/modules-2/files-2.1/dnsjava/dnsjava/2.1.1/5708df81cf6dbff545695f0be6380b7bbc85accc/dnsjava-2.1.1.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="5708df81cf6dbff545695f0be6380b7bbc85accc">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/dnsjava-2.1.1-88a6eb06610a076a6fe0f73b391ed4651123f09f.jar" />
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/dnsjava-2.1.1-88a6eb06610a076a6fe0f73b391ed4651123f09f.jar" />
+    </item>
+    <item
+        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_messages/rosjava_test_msgs/0.2.1/e10783e01c21cbe271aa6062c87f20d11c6053f0/rosjava_test_msgs-0.2.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e10783e01c21cbe271aa6062c87f20d11c6053f0">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/rosjava_test_msgs-0.2.1-68809d63b57225a2718e1708456e6fae31746350.jar" />
     </item>
     <item
         jar="/home/viki/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/12.0/5bc66dd95b79db1e437eb08adba124a3e4088dc0/guava-12.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="5bc66dd95b79db1e437eb08adba124a3e4088dc0">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/guava-12.0-e0e7d3ab60a793caac716dd11339a36aeecd189d.jar" />
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/guava-12.0-e0e7d3ab60a793caac716dd11339a36aeecd189d.jar" />
     </item>
     <item
         jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.apache.commons/com.springsource.org.apache.commons.lang/2.4.0/686e3713650c8e3a5d98723b4d3e239586bf9822/com.springsource.org.apache.commons.lang-2.4.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="686e3713650c8e3a5d98723b4d3e239586bf9822">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/com.springsource.org.apache.commons.lang-2.4.0-d70746954ead8ea22705b5529b13089e1e248e47.jar" />
-    </item>
-    <item
-        jar="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/classes-c5c597bc7c6bcbd77cbc8d8b1302bf75aed0cd96.jar" />
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/com.springsource.org.apache.commons.lang-2.4.0-d70746954ead8ea22705b5529b13089e1e248e47.jar" />
     </item>
     <item
         jar="/home/viki/rosjava/devel/share/maven/org/ros/rosjava_core/apache_xmlrpc_server/0.2.1/apache_xmlrpc_server-0.2.1.jar"
@@ -188,7 +125,168 @@
         jumboMode="false"
         revision="21.1.2"
         sha1="e6fb74a0699abe108969b2ec1f269391169a0426">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/netty-3.5.2.Final-a56f4f2a1f1d2f4bb4787138fb1823ff3f329c56.jar" />
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/netty-3.5.2.Final-a56f4f2a1f1d2f4bb4787138fb1823ff3f329c56.jar" />
+    </item>
+    <item
+        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.apache.commons/com.springsource.org.apache.commons.logging/1.1.1/7657caf2c78e1d79c74d36f2ae128a115f7cc180/com.springsource.org.apache.commons.logging-1.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7657caf2c78e1d79c74d36f2ae128a115f7cc180">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/com.springsource.org.apache.commons.logging-1.1.1-91387a6de6b1dd864db3480ad3ee76649dd2fb22.jar" />
+    </item>
+    <item
+        jar="/home/viki/ROS_Controller/src/android_ROS/controller/libs/msgs.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="cb20a40197c77f350b7d5d8d72b6562cc3af513e">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/msgs-cf19e626402561e54381c33820607347132116e8.jar" />
+    </item>
+    <item
+        jar="/home/viki/.gradle/caches/modules-2/files-2.1/commons-pool/commons-pool/1.6/4572d589699f09d866a226a14b7f4323c6d8f040/commons-pool-1.6.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4572d589699f09d866a226a14b7f4323c6d8f040">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/commons-pool-1.6-7ba11a7efc5f29ea184b0c31bfae6843ddb74c8e.jar" />
+    </item>
+    <item
+        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.apache.commons/com.springsource.org.apache.commons.net/2.0.0/3e78766072ff5a5cf3f5431d973c430c94ec612/com.springsource.org.apache.commons.net-2.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="03e78766072ff5a5cf3f5431d973c430c94ec612">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/com.springsource.org.apache.commons.net-2.0.0-d7c553728863617a29d21b4afe1d658a422a9eb6.jar" />
+    </item>
+    <item
+        jar="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/exploded-aar/org.ros.android_core/android_15/0.2.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8df94920cd437e083ec59dd79f7fbabd3e532d99">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/classes-c90f0851e420ec797eba038f44d7437b7b1b5156.jar" />
+    </item>
+    <item
+        jar="/home/viki/rosjava/devel/share/maven/org/ros/rosjava_core/apache_xmlrpc_client/0.2.1/apache_xmlrpc_client-0.2.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4928aa0042dda2237615a163324b2ea40eb17746">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/apache_xmlrpc_client-0.2.1-d01caf9597b6159382c77f997866bf3f9f22ed99.jar" />
+    </item>
+    <item
+        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_messages/std_msgs/0.5.9/68490f8a983f5415bb95ebf93010c347c4fd20d8/std_msgs-0.5.9.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="68490f8a983f5415bb95ebf93010c347c4fd20d8">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/std_msgs-0.5.9-984ab130d7940a4e0af810fb0a70f95bb25718b8.jar" />
+    </item>
+    <item
+        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_messages/diagnostic_msgs/1.11.7/119c52755000fa22288dd666c4185f54ca737410/diagnostic_msgs-1.11.7.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="119c52755000fa22288dd666c4185f54ca737410">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/diagnostic_msgs-1.11.7-5817f26639205b92944d998b8cdf6114796851b4.jar" />
+    </item>
+    <item
+        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.apache.commons/com.springsource.org.apache.commons.codec/1.3.0/f8690570eb0913d750262bb4223eed30b0d619ed/com.springsource.org.apache.commons.codec-1.3.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f8690570eb0913d750262bb4223eed30b0d619ed">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/com.springsource.org.apache.commons.codec-1.3.0-32474c049341aaf036383ce7b0dcf0cba0d4e344.jar" />
+    </item>
+    <item
+        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_messages/actionlib_msgs/1.11.7/9ec983bb2eaaa20552edeb3544e04a45308fe71b/actionlib_msgs-1.11.7.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9ec983bb2eaaa20552edeb3544e04a45308fe71b">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/actionlib_msgs-1.11.7-f68083f5da1e34a105a58cb0c695895f9724cdd5.jar" />
+    </item>
+    <item
+        jar="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/exploded-aar/org.ros.android_core/android_10/0.2.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a60aa70c71db04f876bb727268dfba54c7e2f312">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/classes-1d833c9d6231bb3eff5b83f79a8ab44734c9f5f0.jar" />
+    </item>
+    <item
+        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_messages/tf2_msgs/0.5.9/b2fea11356b0f4ce744f30ac76e987b531b6028e/tf2_msgs-0.5.9.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b2fea11356b0f4ce744f30ac76e987b531b6028e">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/tf2_msgs-0.5.9-74d8f117259a265b1501cb3a0bb2d42989bfb24c.jar" />
+    </item>
+    <item
+        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_messages/visualization_msgs/1.11.7/3a91db88f91333643e2cde4b16e13b9cd46f7700/visualization_msgs-1.11.7.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3a91db88f91333643e2cde4b16e13b9cd46f7700">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/visualization_msgs-1.11.7-305904dc6caa7759df21cce0998e0e2067f6616e.jar" />
+    </item>
+    <item
+        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_core/rosjava/0.2.1/68face01dcd34ac0dd82fc3745afd764d330b427/rosjava-0.2.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="68face01dcd34ac0dd82fc3745afd764d330b427">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/rosjava-0.2.1-b15a839309a7fc5a57a64296f3f6979838d50645.jar" />
+    </item>
+    <item
+        jar="/home/viki/ROS_Controller/src/android_ROS/controller/libs/joystickview.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3e6510065a4867c6d4a9e2410873bbe8baa7a860">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/joystickview-807f23d40a7f7bc1085e54bd39f2db27991a2901.jar" />
+    </item>
+    <item
+        jar="/home/viki/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/1.3.9/40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf/jsr305-1.3.9.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/jsr305-1.3.9-f150c0af8198a40efb153f99eab46b92ef6d92b5.jar" />
+    </item>
+    <item
+        jar="/home/viki/rosjava/devel/share/maven/org/ros/rosjava_bootstrap/gradle_plugins/0.2.1/gradle_plugins-0.2.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7a831b4b8bbfa01c81433fc8e8da6c6485482926">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/gradle_plugins-0.2.1-d6d3b747b5f94c1c3788fbd5681ab5d6ed6dce63.jar" />
+    </item>
+    <item
+        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_messages/geometry_msgs/1.11.7/bb9ca9051697047f8ebacae69956aa562d43b0e1/geometry_msgs-1.11.7.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="bb9ca9051697047f8ebacae69956aa562d43b0e1">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/geometry_msgs-1.11.7-81582f496ce032f8d47e9adf203d3f1e9f710ded.jar" />
+    </item>
+    <item
+        jar="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-59e79cfd828cfc3e9508db66a8ba7e99359c1404.jar" />
+    </item>
+    <item
+        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_core/apache_xmlrpc_client/0.2.1/55f1cf075db9507a26102898e9f146221e4c1aaf/apache_xmlrpc_client-0.2.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="55f1cf075db9507a26102898e9f146221e4c1aaf">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/apache_xmlrpc_client-0.2.1-69946e12b0ed021b9286ee85a1d7cc4a963b228d.jar" />
+    </item>
+    <item
+        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_messages/sensor_msgs/1.11.7/5f0b7ac0b5d341b9b37f408ab45c4a2e4c80068e/sensor_msgs-1.11.7.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5f0b7ac0b5d341b9b37f408ab45c4a2e4c80068e">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/sensor_msgs-1.11.7-cea20011e2376e817d449918a05c8d245603a55d.jar" />
+    </item>
+    <item
+        jar="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/classes-c5c597bc7c6bcbd77cbc8d8b1302bf75aed0cd96.jar" />
+    </item>
+    <item
+        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.ros.rosjava_core/apache_xmlrpc_server/0.2.1/f96701e8f578b6a4fc538e8a8a6b8f9256fd6718/apache_xmlrpc_server-0.2.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f96701e8f578b6a4fc538e8a8a6b8f9256fd6718">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/apache_xmlrpc_server-0.2.1-a1e6bdca36c0347d7de3d5fe071081a44abc7b3c.jar" />
     </item>
     <item
         jar="/home/viki/rosjava/devel/share/maven/org/ros/rosjava_core/apache_xmlrpc_common/0.2.1/apache_xmlrpc_common-0.2.1.jar"
@@ -205,32 +303,11 @@
         <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-25360bcca7287b4a10ae2a3de43b9aa4bb5b3163.jar" />
     </item>
     <item
-        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.apache.commons/com.springsource.org.apache.commons.logging/1.1.1/7657caf2c78e1d79c74d36f2ae128a115f7cc180/com.springsource.org.apache.commons.logging-1.1.1.jar"
+        jar="/opt/ros/indigo/share/maven/org/ros/rosjava_bootstrap/message_generation/0.2.1/message_generation-0.2.1.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="7657caf2c78e1d79c74d36f2ae128a115f7cc180">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/com.springsource.org.apache.commons.logging-1.1.1-91387a6de6b1dd864db3480ad3ee76649dd2fb22.jar" />
-    </item>
-    <item
-        jar="/home/viki/ROS_Controller/src/android_ROS/controller/libs/msgs.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="cb20a40197c77f350b7d5d8d72b6562cc3af513e">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/msgs-cf19e626402561e54381c33820607347132116e8.jar" />
-    </item>
-    <item
-        jar="/home/viki/.gradle/caches/modules-2/files-2.1/commons-pool/commons-pool/1.6/4572d589699f09d866a226a14b7f4323c6d8f040/commons-pool-1.6.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4572d589699f09d866a226a14b7f4323c6d8f040">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/commons-pool-1.6-7ba11a7efc5f29ea184b0c31bfae6843ddb74c8e.jar" />
-    </item>
-    <item
-        jar="/home/viki/.gradle/caches/modules-2/files-2.1/org.apache.commons/com.springsource.org.apache.commons.net/2.0.0/3e78766072ff5a5cf3f5431d973c430c94ec612/com.springsource.org.apache.commons.net-2.0.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="03e78766072ff5a5cf3f5431d973c430c94ec612">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/com.springsource.org.apache.commons.net-2.0.0-d7c553728863617a29d21b4afe1d658a422a9eb6.jar" />
+        sha1="1be2d63868f3c2d477efd7ac1344fc7349359385">
+        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/release/message_generation-0.2.1-2fba721c439e2b4d341c253db8ea70791bb6d064.jar" />
     </item>
     <item
         jar="/home/viki/rosjava/devel/share/maven/org/ros/rosjava_messages/std_msgs/0.5.9/std_msgs-0.5.9.jar"
@@ -245,20 +322,6 @@
         revision="21.1.2"
         sha1="13be962bc653bb5a4181bb7d027229466a9d2719">
         <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/rosjava_test_msgs-0.2.1-77ca37e6437e2a0987b744d0befc2b950758a357.jar" />
-    </item>
-    <item
-        jar="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/exploded-aar/org.ros.android_core/android_15/0.2.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="8df94920cd437e083ec59dd79f7fbabd3e532d99">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/classes-c90f0851e420ec797eba038f44d7437b7b1b5156.jar" />
-    </item>
-    <item
-        jar="/home/viki/rosjava/devel/share/maven/org/ros/rosjava_core/apache_xmlrpc_client/0.2.1/apache_xmlrpc_client-0.2.1.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4928aa0042dda2237615a163324b2ea40eb17746">
-        <dex dex="/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/pre-dexed/debug/apache_xmlrpc_client-0.2.1-d01caf9597b6159382c77f997866bf3f9f22ed99.jar" />
     </item>
 
 </items>

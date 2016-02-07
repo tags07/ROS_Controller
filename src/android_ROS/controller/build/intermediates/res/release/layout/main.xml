@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+
+    >
+
+    <org.ros.android.view.RosTextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dip" />
+    <org.ros.android.view.RosImageView
+        android:id="@+id/image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Joystick.DualJoystickView
+            android:id="@+id/dualjoystickView"
+            android:layout_width="fill_parent"
+            android:layout_height="175dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dip" />
+        <TableLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dip">
+            <TableRow>
+                <TextView android:text="X" android:layout_width="50dip"
+                    android:layout_height="wrap_content"></TextView>
+                <TextView android:text="" android:id="@+id/TextViewX1"
+                    android:layout_width="150dip" android:layout_height="wrap_content"></TextView>
+
+                <TextView android:text="X" android:layout_width="50dip"
+                    android:layout_height="wrap_content"></TextView>
+                <TextView android:text="" android:id="@+id/TextViewX2"
+                    android:layout_width="100dip" android:layout_height="wrap_content"></TextView>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Y" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+                <TextView android:text="" android:id="@+id/TextViewY1"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+
+                <TextView android:text="Y" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+                <TextView android:text="" android:id="@+id/TextViewY2"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/home/viki/ROS_Controller/src/android_ROS/controller/src/main/res/layout/main.xml -->

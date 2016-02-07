@@ -32,6 +32,7 @@ MERGED from org.ros.android_core:android_10:0.2.0:16:5
 application
 ADDED from AndroidManifest.xml:12:5
 MERGED from org.ros.android_core:android_10:0.2.0:18:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
 	android:label
 		ADDED from AndroidManifest.xml:12:18
 	android:icon
@@ -80,7 +81,9 @@ ADDED from AndroidManifest.xml:28:17
 		ADDED from AndroidManifest.xml:28:25
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
+MERGED from org.ros.android_core:android_15:0.2.0:8:5
 MERGED from org.ros.android_core:android_10:0.2.0:8:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
 MERGED from com.github.rosjava.android_extras:gingerbread:0.2.0:8:5
 	android:targetSdkVersion
 		INJECTED from AndroidManifest.xml:0:0

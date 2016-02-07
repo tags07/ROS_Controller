@@ -2,12 +2,13 @@ package com.github.ros_java.android_ROS.controller;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.TextView;
 
-import org.ros.android.BitmapFromImage;
+import org.ros.android.BitmapFromCompressedImage;
 import org.ros.android.MessageCallable;
 import org.ros.android.RosActivity;
-import org.ros.android.view.RosImageView;
 import org.ros.android.view.RosTextView;
 import org.ros.node.NodeConfiguration;
 import org.ros.node.NodeMainExecutor;
@@ -18,12 +19,13 @@ import Joystick.DualJoystickView;
 import Joystick.JoystickMovedListener;
 import msgs.Ball;
 import msgs.ImageData;
-import sensor_msgs.Image;
+import sensor_msgs.CompressedImage;
+
 
 public class Controller extends RosActivity
 {
     private RosTextView<ImageData> rosTextView;
-    private RosImageView<Image> rosImageView;
+    private RosImageView2<CompressedImage> rosImageView;
 
     private Publisherr talker;
     TextView txtX1, txtY1;
@@ -42,8 +44,10 @@ public class Controller extends RosActivity
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
 
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        setContentView(R.layout.main);
         txtX1 = (TextView) findViewById(R.id.TextViewX1);
         txtY1 = (TextView) findViewById(R.id.TextViewY1);
 
@@ -75,10 +79,10 @@ public class Controller extends RosActivity
             }
         });
 
-        rosImageView = (RosImageView<sensor_msgs.Image>)findViewById(R.id.image);
-        rosImageView.setTopicName("/front_cam/image");
-        rosImageView.setMessageType("sensor_msgs/Image");
-        rosImageView.setMessageToBitmapCallable(new BitmapFromImage());
+        rosImageView = (RosImageView2<sensor_msgs.CompressedImage>)findViewById(R.id.image);
+        rosImageView.setMessageType(sensor_msgs.CompressedImage._TYPE);
+        rosImageView.setTopicName("/front_cam/image/compressed");
+        rosImageView.setMessageToBitmapCallable(new BitmapFromCompressedImage());
 
 
     }

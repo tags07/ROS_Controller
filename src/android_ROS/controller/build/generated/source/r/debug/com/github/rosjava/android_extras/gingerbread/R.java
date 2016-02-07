@@ -8,8 +8,8 @@ package com.github.rosjava.android_extras.gingerbread;
 
 public final class R {
 	public static final class drawable {
-		public static final int battery_charging = 0x7f020000;
-		public static final int battery_silhouette = 0x7f020001;
+		public static final int battery_charging = 0x7f020001;
+		public static final int battery_silhouette = 0x7f020002;
 	}
 	public static final class layout {
 		public static final int main = 0x7f040000;
