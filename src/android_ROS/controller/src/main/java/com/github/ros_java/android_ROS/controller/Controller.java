@@ -1,7 +1,6 @@
 package com.github.ros_java.android_ROS.controller;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
@@ -25,6 +24,8 @@ import sensor_msgs.CompressedImage;
 public class Controller extends RosActivity
 {
     private RosTextView<ImageData> rosTextView;
+
+    //displays the camera`s image
     private RosImageView2<CompressedImage> rosImageView;
 
     private Publisherr talker;
@@ -33,8 +34,7 @@ public class Controller extends RosActivity
     DualJoystickView joystick;
 
     public Controller() {
-        // The RosActivity constructor configures the notification title and ticker
-        // messages.
+        // The RosActivity constructor configures the notification title.
 
         super("ROS Controller", "ROS Controller");
     }
@@ -45,22 +45,44 @@ public class Controller extends RosActivity
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        hideTitleBar();
+
+        setContentView(R.layout.main);
+
+        defineTextFields();
+
+        defineJoySticks();
+
+        defineTextViews();
+
+        defineImageViews();
+
+        //defines publisher class
+        talker = new Publisherr(this);
+    }
+
+    public void hideTitleBar() {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.main);
+    }
+
+    public void defineTextFields() {
         txtX1 = (TextView) findViewById(R.id.TextViewX1);
         txtY1 = (TextView) findViewById(R.id.TextViewY1);
 
         txtX2 = (TextView) findViewById(R.id.TextViewX2);
         txtY2 = (TextView) findViewById(R.id.TextViewY2);
+    }
 
+    public void defineJoySticks() {
         joystick = (DualJoystickView) findViewById(R.id.dualjoystickView);
 
         joystick.setOnJostickMovedListener(_listenerLeft, _listenerRight);
+    }
 
-
+    public void defineTextViews() {
         rosTextView = (RosTextView<ImageData>) findViewById(R.id.text);
-        rosTextView.setTopicName("/vision_data");
+        rosTextView.setTopicName(getResources().getString(R.string.sub_data_topic));
 
         rosTextView.setMessageType(ImageData._TYPE);
         rosTextView.setMessageToStringCallable(new MessageCallable<String, ImageData>() {
@@ -71,36 +93,38 @@ public class Controller extends RosActivity
 
                 if (pallid.size() > 0) {
                     joined = String.valueOf(pallid.get(0).getDistance());
-                    Log.d("Balls", "aa" + joined.length());
+                    //Log.d("Balls", "aa" + joined.length());
                 }
 
 
                 return joined;
             }
         });
-
-        rosImageView = (RosImageView2<sensor_msgs.CompressedImage>)findViewById(R.id.image);
-        rosImageView.setMessageType(sensor_msgs.CompressedImage._TYPE);
-        rosImageView.setTopicName("/front_cam/image/compressed");
-        rosImageView.setMessageToBitmapCallable(new BitmapFromCompressedImage());
-
-
     }
 
+
+    public void defineImageViews() {
+        rosImageView = (RosImageView2<sensor_msgs.CompressedImage>)findViewById(R.id.image);
+        rosImageView.setMessageType(sensor_msgs.CompressedImage._TYPE);
+        rosImageView.setTopicName(getResources().getString(R.string.sub_image_topic));
+        rosImageView.setMessageToBitmapCallable(new BitmapFromCompressedImage());
+    }
+
+    //Defines what joystick(left) movement does
     private JoystickMovedListener _listenerLeft = new JoystickMovedListener() {
 
         @Override
         public void OnMoved(int pan, int tilt) {
             txtX1.setText(Integer.toString(pan));
             txtY1.setText(Integer.toString(tilt));
-            talker.set_movement(pan, -tilt);
+            BridgeToPublisher.set_movement(pan, -tilt);
         }
 
         @Override
         public void OnReleased() {
             txtX1.setText("released");
             txtY1.setText("released");
-            talker.set_movement(0,0);
+            BridgeToPublisher.set_movement(0,0);
         }
 
         public void OnReturnedToCenter() {
@@ -109,20 +133,22 @@ public class Controller extends RosActivity
         };
     };
 
+
+
     private JoystickMovedListener _listenerRight = new JoystickMovedListener() {
 
         @Override
         public void OnMoved(int pan, int tilt) {
             txtX2.setText(Integer.toString(pan));
             txtY2.setText(Integer.toString(tilt));
-            talker.set_turn(pan, -tilt);
+            BridgeToPublisher.set_turn(pan, -tilt);
         }
 
         @Override
         public void OnReleased() {
             txtX2.setText("released");
             txtY2.setText("released");
-            talker.set_turn(0,0);
+            BridgeToPublisher.set_turn(0,0);
         }
 
         public void OnReturnedToCenter() {
@@ -133,20 +159,16 @@ public class Controller extends RosActivity
 
     @Override
     protected void init(NodeMainExecutor nodeMainExecutor) {
-        talker = new Publisherr();
-
         // At this point, the user has already been prompted to either enter the URI
         // of a master to use or to start a master locally.
 
-        // The user can easily use the selected ROS Hostname in the master chooser
-        // activity.
         NodeConfiguration nodeConfiguration = NodeConfiguration.newPublic(getRosHostname());
         nodeConfiguration.setMasterUri(getMasterUri());
+
+        //starts subscribers and publishers
         nodeMainExecutor.execute(rosTextView, nodeConfiguration);
         nodeMainExecutor.execute(rosImageView, nodeConfiguration);
         nodeMainExecutor.execute(talker, nodeConfiguration);
-        // The RosTextView is also a NodeMain that must be executed in order to
-        // start displaying incoming messages.
 
     }
 }
