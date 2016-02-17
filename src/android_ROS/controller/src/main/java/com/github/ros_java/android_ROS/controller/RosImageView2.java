@@ -99,6 +99,7 @@ public class RosImageView2<T> extends SurfaceView implements NodeMain {
 
   @Override
   public void onShutdown(Node node) {
+    node.shutdown();
   }
 
   @Override

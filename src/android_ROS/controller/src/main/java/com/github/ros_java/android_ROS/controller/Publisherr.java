@@ -19,9 +19,10 @@ import msgs.Cmd;
 public class Publisherr extends AbstractNodeMain {
     private String topic_name;
     Context app;
+
     public Publisherr(Context c) {
         this.app = c;
-        this.topic_name = c.getString(R.string.pub_topic);
+        this.topic_name = app.getString(R.string.pub_topic);
     }
 
     public Publisherr(String topic) {
@@ -29,24 +30,16 @@ public class Publisherr extends AbstractNodeMain {
     }
 
     public GraphName getDefaultNodeName() {
-        return GraphName.of("Talker");
+        return GraphName.of(app.getString(R.string.pub_displayed_name));
     }
 
     public void onStart(ConnectedNode connectedNode) {
-        final Publisher publisher = connectedNode.newPublisher(this.topic_name, "msgs/Cmd");
+        final Publisher publisher = connectedNode.newPublisher(this.topic_name, app.getString(R.string.pub_message_type));
 
         connectedNode.executeCancellableLoop(new CancellableLoop() {
-
-            private int sequenceNumber;
-
-            protected void setup() {
-                this.sequenceNumber = 0;
-            }
-
             protected void loop() throws InterruptedException {
                 //compose and send off message
                 publisher.publish(createCmdMessage(publisher));
-                ++this.sequenceNumber;
                 Thread.sleep(100L);
             }
         });
@@ -58,8 +51,8 @@ public class Publisherr extends AbstractNodeMain {
         msg.setKick(BridgeToPublisher.kick);
         msg.setRadAngle(BridgeToPublisher.angle);
         msg.setTurnRate(BridgeToPublisher.turn);
+        msg.setText(BridgeToPublisher.text);
         return msg;
-
     }
 
 }

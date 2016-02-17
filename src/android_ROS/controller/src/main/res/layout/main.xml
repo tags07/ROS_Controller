@@ -7,11 +7,7 @@
 
     >
 
-    <org.ros.android.view.RosTextView
-        android:id="@+id/text"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:textSize="30dip" />
+
     <com.github.ros_java.android_ROS.controller.RosImageView2
         android:id="@+id/image"
         android:layout_width="fill_parent"
@@ -53,6 +49,29 @@
                 <TextView android:text="" android:id="@+id/TextViewY2"
                     android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
             </TableRow>
+
+                <EditText
+
+                    android:id="@+id/entered_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter message"
+                    android:visibility="gone"
+                    android:inputType="textEmailAddress"
+                    android:cursorVisible="false"/>
+            <org.ros.android.view.RosTextView
+                android:id="@+id/text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dip" />
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:visibility="visible"
+                android:max="5" >
+            </SeekBar>
         </TableLayout>
     </LinearLayout>
 

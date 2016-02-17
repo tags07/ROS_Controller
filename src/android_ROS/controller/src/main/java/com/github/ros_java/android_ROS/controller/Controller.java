@@ -1,8 +1,13 @@
 package com.github.ros_java.android_ROS.controller;
 
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.EditText;
+import android.widget.SeekBar;
 import android.widget.TextView;
 
 import org.ros.android.BitmapFromCompressedImage;
@@ -29,9 +34,14 @@ public class Controller extends RosActivity
     private RosImageView2<CompressedImage> rosImageView;
 
     private Publisherr talker;
-    TextView txtX1, txtY1;
-    TextView txtX2, txtY2;
-    DualJoystickView joystick;
+    private TextView txtX1, txtY1;
+    private TextView txtX2, txtY2;
+    private EditText enteredText;
+    private DualJoystickView joystick;
+    private String displayed_message;
+    private double lastChanceToKick;
+    private double shootingRange;
+    private SeekBar bar;
 
     public Controller() {
         // The RosActivity constructor configures the notification title.
@@ -51,6 +61,10 @@ public class Controller extends RosActivity
 
         defineTextFields();
 
+        defineEditTextFields();
+
+        defineSlider();
+
         defineJoySticks();
 
         defineTextViews();
@@ -59,6 +73,33 @@ public class Controller extends RosActivity
 
         //defines publisher class
         talker = new Publisherr(this);
+    }
+
+    public void defineSlider() {
+        bar = (SeekBar)findViewById(R.id.seekBar);
+        bar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                BridgeToPublisher.progressBar = seekBar.getProgress();
+
+
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+                // TODO Auto-generated method stub
+
+            }
+
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress,
+                                          boolean fromUser) {
+
+
+            }
+        });
+
     }
 
     public void hideTitleBar() {
@@ -74,6 +115,28 @@ public class Controller extends RosActivity
         txtY2 = (TextView) findViewById(R.id.TextViewY2);
     }
 
+
+    public void defineEditTextFields() {
+        enteredText = (EditText)findViewById(R.id.entered_text);
+        enteredText.addTextChangedListener(new TextWatcher() {
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                BridgeToPublisher.text = String.valueOf(s);
+            }
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start,
+                                          int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start,
+                                      int before, int count) {
+            }
+        });
+    }
+
     public void defineJoySticks() {
         joystick = (DualJoystickView) findViewById(R.id.dualjoystickView);
 
@@ -85,21 +148,45 @@ public class Controller extends RosActivity
         rosTextView.setTopicName(getResources().getString(R.string.sub_data_topic));
 
         rosTextView.setMessageType(ImageData._TYPE);
+        displayed_message = "";
+        lastChanceToKick = 5000;
+        shootingRange = 0.155;
+
         rosTextView.setMessageToStringCallable(new MessageCallable<String, ImageData>() {
             @Override
             public String call(ImageData message) {
                 List<Ball> pallid = message.getBalls();
-                String joined = "";
+                float smallest_length = 500;
 
-                if (pallid.size() > 0) {
-                    joined = String.valueOf(pallid.get(0).getDistance());
-                    //Log.d("Balls", "aa" + joined.length());
+                for (int i = 0; i < pallid.size(); i++) {
+                    if (pallid.get(i).getDistance() < smallest_length) {
+                        smallest_length = pallid.get(i).getDistance();
+                    }
                 }
 
+                if (smallest_length < shootingRange) {
+                    displayed_message = "KICK";
+                    lastChanceToKick = System.currentTimeMillis();
+                } else {
+                    hideMessageDelay();
+                }
+                /*
+                if (pallid.size() > 0) {
+                    joined = String.valueOf(pallid.get(0).getDistance());
+                    Log.d("Balls", "aa" + joined.length());
+                }*/
 
-                return joined;
+
+                return displayed_message;
             }
         });
+    }
+
+    public void hideMessageDelay() {
+        if(System.currentTimeMillis() - lastChanceToKick > 1000) {
+            Log.d("Time", "" + (System.currentTimeMillis() - lastChanceToKick));
+            displayed_message = "";
+        }
     }
 
 
