@@ -21,10 +21,11 @@ import java.util.List;
 
 import Joystick.DualJoystickView;
 import Joystick.JoystickMovedListener;
-import msgs.Ball;
-import msgs.ImageData;
 import sensor_msgs.CompressedImage;
 
+//Custom messages
+import msgs.Ball;
+import msgs.ImageData;
 
 public class Controller extends RosActivity
 {
@@ -150,7 +151,7 @@ public class Controller extends RosActivity
         rosTextView.setMessageType(ImageData._TYPE);
         displayed_message = "";
         lastChanceToKick = 5000;
-        shootingRange = 0.155;
+
 
         rosTextView.setMessageToStringCallable(new MessageCallable<String, ImageData>() {
             @Override
@@ -164,7 +165,7 @@ public class Controller extends RosActivity
                     }
                 }
 
-                if (smallest_length < shootingRange) {
+                if (smallest_length < Double.parseDouble(getResources().getString(R.string.kick_range))) {
                     displayed_message = "KICK";
                     lastChanceToKick = System.currentTimeMillis();
                 } else {

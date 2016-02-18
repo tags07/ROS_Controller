@@ -13,6 +13,7 @@ import org.ros.node.AbstractNodeMain;
 import org.ros.node.ConnectedNode;
 import org.ros.node.topic.Publisher;
 
+//Custom messages
 import msgs.Cmd;
 
 
