@@ -23,7 +23,7 @@ Note: RosImageView can`t handle anything more than a CompressedImage.
 
 ## Example
 
-This is an example using a CompressedImage and ImageData subscirber with a /com_cmd publisher. The slider is for controlling speed.
+This is an example using a CompressedImage and ImageData subscriber with a /com_cmd publisher. The slider is for controlling speed.
 
 ![Ros Controller](/media/screenshots/Screenshot1.png?raw=true "Ros controller")
 
