@@ -12,4 +12,12 @@ This app provides a connection between a robot using ROS and an Android phone. T
 * Change topic names in  [strings.xml](https://github.com/erkihindo/ROS_Controller/blob/master/src/android_ROS/controller/src/main/res/values/strings.xml)
 * Change data types for subscriber located in defineImageViews() in [Controller.java](https://github.com/erkihindo/ROS_Controller/blob/master/src/android_ROS/controller/src/main/java/com/github/ros_java/android_ROS/controller/Controller.java) 
 * Change publisher message creation in [Publisherr.java](https://github.com/erkihindo/ROS_Controller/blob/master/src/android_ROS/controller/src/main/java/com/github/ros_java/android_ROS/controller/Publisherr.java) and [BridgeToPublisher.java](https://github.com/erkihindo/ROS_Controller/blob/master/src/android_ROS/controller/src/main/java/com/github/ros_java/android_ROS/controller/BridgeToPublisher.java)
+* If needed, change [layout](https://github.com/erkihindo/ROS_Controller/blob/master/src/android_ROS/controller/src/main/res/layout/main.xml). 
+
+## Example
+
+This is an example using a CompressedImage and ImageData subscirber with a /com_cmd publisher. The slider is for controlling speed.
+
+![Ros Controller](/media/screenshots/Screenshot1.png?raw=true "Ros controller")
+
 
