@@ -59,8 +59,6 @@
                 <element signature="method#defineEditTextFields#0;class#Controller#0" expanded="false" />
                 <element signature="e#3350#3351#0" expanded="true" />
                 <element signature="e#3424#3425#0" expanded="true" />
-                <element signature="e#4117#4166#0" expanded="true" />
-                <element signature="e#5848#5898#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,7 +67,7 @@
       <file leaf-file-name="RosTextView.class" pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/controller/build/intermediates/exploded-aar/org.ros.android_core/android_10/0.2.0/classes.jar!/org/ros/android/view/RosTextView.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="19.966667">
+            <state vertical-scroll-proportion="0.0">
               <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
               <folding />
             </state>
@@ -78,14 +76,14 @@
       </file>
       <file leaf-file-name="main.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/src/main/res/layout/main.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5050505">
-              <caret line="71" column="43" selection-start-line="71" selection-start-column="43" selection-end-line="71" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
           <provider editor-type-id="android-designer">
             <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="3.3636363">
+              <caret line="74" column="22" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="22" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -97,10 +95,6 @@
               <folding>
                 <element signature="e#0#1690#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#776#818#0" expanded="true" />
-                <element signature="e#963#1003#0" expanded="true" />
-                <element signature="e#1052#1310#0" expanded="true" />
-                <element signature="e#1309#1310#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,7 +113,7 @@
       <file leaf-file-name="RosImageView2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/github/ros_java/android_ROS/controller/RosImageView2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.3">
+            <state vertical-scroll-proportion="0.0">
               <caret line="101" column="20" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
               <folding>
                 <element signature="e#2973#2974#0" expanded="true" />
@@ -132,7 +126,7 @@
       <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.5">
+            <state vertical-scroll-proportion="0.0">
               <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
               <folding />
             </state>
@@ -1892,18 +1886,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="AndroidView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android_ROS" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -2095,6 +2077,18 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android_ROS" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2330,9 +2324,9 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283859" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5194805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27458256" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2424,21 +2418,19 @@
             <element signature="method#defineEditTextFields#0;class#Controller#0" expanded="false" />
             <element signature="e#3350#3351#0" expanded="true" />
             <element signature="e#3424#3425#0" expanded="true" />
-            <element signature="e#4117#4166#0" expanded="true" />
-            <element signature="e#5848#5898#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/src/main/res/layout/main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/github/ros_java/android_ROS/controller/Publisherr.java">
@@ -2495,21 +2487,19 @@
             <element signature="method#defineEditTextFields#0;class#Controller#0" expanded="false" />
             <element signature="e#3350#3351#0" expanded="true" />
             <element signature="e#3424#3425#0" expanded="true" />
-            <element signature="e#4117#4166#0" expanded="true" />
-            <element signature="e#5848#5898#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/src/main/res/layout/main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/github/ros_java/android_ROS/controller/Publisherr.java">
@@ -2566,8 +2556,6 @@
             <element signature="method#defineEditTextFields#0;class#Controller#0" expanded="false" />
             <element signature="e#3350#3351#0" expanded="true" />
             <element signature="e#3424#3425#0" expanded="true" />
-            <element signature="e#4117#4166#0" expanded="true" />
-            <element signature="e#5848#5898#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2626,21 +2614,19 @@
             <element signature="method#defineEditTextFields#0;class#Controller#0" expanded="false" />
             <element signature="e#3350#3351#0" expanded="true" />
             <element signature="e#3424#3425#0" expanded="true" />
-            <element signature="e#4117#4166#0" expanded="true" />
-            <element signature="e#5848#5898#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/src/main/res/layout/main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
@@ -2747,7 +2733,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/github/ros_java/android_ROS/controller/RosImageView2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.3">
+        <state vertical-scroll-proportion="0.0">
           <caret line="101" column="20" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
           <folding>
             <element signature="e#2973#2974#0" expanded="true" />
@@ -2763,17 +2749,13 @@
           <folding>
             <element signature="e#0#1690#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#776#818#0" expanded="true" />
-            <element signature="e#963#1003#0" expanded="true" />
-            <element signature="e#1052#1310#0" expanded="true" />
-            <element signature="e#1309#1310#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/controller/build/intermediates/exploded-aar/org.ros.android_core/android_10/0.2.0/classes.jar!/org/ros/android/view/RosTextView.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="19.966667">
+        <state vertical-scroll-proportion="0.0">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
         </state>
@@ -2797,29 +2779,27 @@
             <element signature="method#defineEditTextFields#0;class#Controller#0" expanded="false" />
             <element signature="e#3350#3351#0" expanded="true" />
             <element signature="e#3424#3425#0" expanded="true" />
-            <element signature="e#4117#4166#0" expanded="true" />
-            <element signature="e#5848#5898#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5">
+        <state vertical-scroll-proportion="0.0">
           <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/src/main/res/layout/main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5050505">
-          <caret line="71" column="43" selection-start-line="71" selection-start-column="43" selection-end-line="71" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.3636363">
+          <caret line="74" column="22" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="22" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
