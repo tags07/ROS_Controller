@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/home/viki/android_core/src/android_core/android_10/res/values/common_strings.xml -->
+    <!-- From: file:/opt/android_core/src/android_core/android_10/res/values/common_strings.xml -->
     <eat-comment/>
     <string name="app_name">ROS for Android</string>
     <string name="cancel">Cancel</string>
@@ -12,7 +12,7 @@
     <string name="show_advanced">Show advanced options</string>
     <string name="uri_text">Master URI:</string>
     <string name="use_master">Connect</string>
-    <!-- From: file:/home/viki/android_core/src/android_core/android_10/res/values/styles.xml -->
+    <!-- From: file:/opt/android_core/src/android_core/android_10/res/values/styles.xml -->
     <eat-comment/>
     <style name="padded">
         <item name="android:layout_marginTop">10dp</item>

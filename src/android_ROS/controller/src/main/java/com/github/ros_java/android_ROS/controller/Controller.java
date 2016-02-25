@@ -9,6 +9,7 @@ import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.ros.android.BitmapFromCompressedImage;
 import org.ros.android.MessageCallable;
@@ -21,13 +22,13 @@ import java.util.List;
 
 import Joystick.DualJoystickView;
 import Joystick.JoystickMovedListener;
+import msgs.Ball;
+import msgs.ImageData;
 import sensor_msgs.CompressedImage;
 
 //Custom messages
-import msgs.Ball;
-import msgs.ImageData;
 
-public class Controller extends RosActivity
+public class Controller extends RosActivity implements Thread.UncaughtExceptionHandler
 {
     private RosTextView<ImageData> rosTextView;
 
@@ -55,6 +56,7 @@ public class Controller extends RosActivity
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Thread.setDefaultUncaughtExceptionHandler(this);
 
         hideTitleBar();
 
@@ -258,5 +260,21 @@ public class Controller extends RosActivity
         nodeMainExecutor.execute(rosImageView, nodeConfiguration);
         nodeMainExecutor.execute(talker, nodeConfiguration);
 
+    }
+
+    @Override
+    public void uncaughtException(Thread thread, Throwable ex) {
+        ex.printStackTrace();
+        Log.e("Error", String.valueOf(ex.getCause()));
+        toast(String.valueOf(ex.getCause().getCause().getMessage()));
+    }
+
+    protected void toast(final String text) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(Controller.this, text, Toast.LENGTH_LONG).show();
+            }
+        });
     }
 }

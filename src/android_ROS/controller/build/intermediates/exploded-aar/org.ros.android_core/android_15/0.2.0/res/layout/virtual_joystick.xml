@@ -192,4 +192,4 @@
     android:layout_height="wrap_content" android:antialias="true" />
 
 </RelativeLayout>
-<!-- From: file:/home/viki/android_core/src/android_core/android_15/res/layout/virtual_joystick.xml -->
+<!-- From: file:/opt/android_core/src/android_core/android_15/res/layout/virtual_joystick.xml -->

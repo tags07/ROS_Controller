@@ -6,6 +6,11 @@
     <!-- From: file:/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/exploded-aar/org.ros.android_core/android_10/0.2.0/res/values/values.xml -->
     <eat-comment/>
     <string name="cancel">Cancel</string>
+    <!-- From: file:/home/viki/ROS_Controller/src/android_ROS/controller/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="kick_range">0.155</string>
+    <!-- From: file:/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/exploded-aar/org.ros.android_core/android_10/0.2.0/res/values/values.xml -->
+    <eat-comment/>
     <string name="master_uri_hint">http://localhost:11311/</string>
     <string name="new_master">New Public Master</string>
     <string name="new_private_master">New Private Master</string>

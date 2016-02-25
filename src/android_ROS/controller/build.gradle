@@ -32,7 +32,7 @@ dependencies {
   compile 'org.ros.rosjava_messages:tf2_msgs:[0.5,0.6)'
   compile files('libs/msgs.jar')
   compile files('libs/joystickview.jar')
-
+  compile 'com.android.support:support-v4:23.2.0'
 }
 
 

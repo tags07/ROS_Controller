@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/android_ROS.iml" filepath="$PROJECT_DIR$/android_ROS.iml" />
       <module fileurl="file://$PROJECT_DIR$/controller/controller.iml" filepath="$PROJECT_DIR$/controller/controller.iml" />
-      <module fileurl="file://$PROJECT_DIR$/controllerlib/controllerlib.iml" filepath="$PROJECT_DIR$/controllerlib/controllerlib.iml" />
     </modules>
   </component>
 </project>
