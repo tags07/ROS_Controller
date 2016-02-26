@@ -4,6 +4,9 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.InputDevice;
+import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.EditText;
@@ -44,6 +47,18 @@ public class Controller extends RosActivity implements Thread.UncaughtExceptionH
     private double lastChanceToKick;
     private double shootingRange;
     private SeekBar bar;
+
+    //bluetooth
+    double blueLeftX;
+    double blueRightX;
+    double blueLeftY;
+    double blueRightY;
+
+    double bluetoothContrX1;
+    double bluetoothContrX2;
+
+    double bluetoothContrY1;
+    double bluetoothContrY2;
 
     public Controller() {
         // The RosActivity constructor configures the notification title.
@@ -276,5 +291,89 @@ public class Controller extends RosActivity implements Thread.UncaughtExceptionH
                 Toast.makeText(Controller.this, text, Toast.LENGTH_LONG).show();
             }
         });
+    }
+
+
+
+
+    //bluetooth
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        boolean handled = false;
+        if ((event.getSource() & InputDevice.SOURCE_GAMEPAD)
+                == InputDevice.SOURCE_GAMEPAD) {
+            if (event.getRepeatCount() == 0) {
+                switch (keyCode) {
+                    // Handle gamepad and D-pad button presses to
+                    // navigate the ship
+                    //...
+
+                    default:
+                        if (isFireKey(keyCode)) {
+                            // Update the ship object to fire lasers
+                            //...
+                            System.out.println("Fire");
+                            BridgeToPublisher.kick = true;
+                            handled = true;
+                        }
+
+                        if (isBackKey(keyCode)) {
+                            System.out.println("Back");
+                            handled = true;
+                        }
+                        System.out.println(keyCode);
+                        break;
+                }
+            }
+            if (handled) {
+                return true;
+            }
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
+
+    private static boolean isFireKey(int keyCode) {
+        // Here we treat Button_A and DPAD_CENTER as the primary action
+        // keys for the game.
+        return keyCode == 103;
+    }
+
+    private static boolean isBackKey(int keyCode) {
+        // Here we treat Button_A and DPAD_CENTER as the primary action
+        // keys for the game.
+        return keyCode == 97 || keyCode == 100;
+    }
+
+
+    @Override
+    public boolean onGenericMotionEvent(MotionEvent event) {
+        BridgeToPublisher.kick = false;
+
+        blueLeftX = event.getX();
+        blueLeftY = event.getY();
+
+        blueRightX = event.getAxisValue(MotionEvent.AXIS_Z);
+        blueRightY = event.getAxisValue(MotionEvent.AXIS_RZ);
+        bluetoothContrX1 = 0;
+        bluetoothContrX2 = 0;
+
+        bluetoothContrY1 = 0;
+        bluetoothContrY2 = 0;
+
+        if(!(Math.abs(blueLeftX) < 0.12)) bluetoothContrX1 = 10 * blueLeftX;
+        if(!(Math.abs(blueLeftY) < 0.12)) bluetoothContrY1 = 10 * blueLeftY;
+
+        if(!(Math.abs(blueRightX) < 0.12)) bluetoothContrX2 = 10 * blueRightX;
+        if(!(Math.abs(blueRightY) < 0.12)) bluetoothContrY2 = 10 * blueRightY;
+
+        Log.d("Left Stick X", bluetoothContrX1 + "");
+        Log.d("Left Stick Y", bluetoothContrY1 + "");
+
+        Log.d("Right Stick Y", bluetoothContrY2 + "");
+        Log.d("Right Stick X", bluetoothContrX2 + "");
+        BridgeToPublisher.set_movement((int) bluetoothContrX1, (int) -bluetoothContrY1);
+        BridgeToPublisher.set_turn((int) bluetoothContrX2, (int) -bluetoothContrY2);
+        return super.onGenericMotionEvent(event);
     }
 }
