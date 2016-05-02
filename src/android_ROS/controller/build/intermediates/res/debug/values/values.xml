@@ -8,6 +8,8 @@
     <string name="cancel">Cancel</string>
     <!-- From: file:/home/viki/ROS_Controller/src/android_ROS/controller/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="joystick_x">X</string>
+    <string name="joystick_y">Y</string>
     <string name="kick_range">0.155</string>
     <!-- From: file:/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/exploded-aar/org.ros.android_core/android_10/0.2.0/res/values/values.xml -->
     <eat-comment/>
@@ -28,6 +30,7 @@
     <eat-comment/>
     <string name="sub_data_topic">/vision_data</string>
     <string name="sub_image_topic">/front_cam/image/compressed</string>
+    <string name="text_field">Enter message</string>
     <!-- From: file:/home/viki/ROS_Controller/src/android_ROS/controller/build/intermediates/exploded-aar/org.ros.android_core/android_10/0.2.0/res/values/values.xml -->
     <eat-comment/>
     <string name="uri_text">Master URI:</string>

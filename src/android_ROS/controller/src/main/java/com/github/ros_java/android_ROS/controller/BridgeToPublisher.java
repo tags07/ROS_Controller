@@ -1,7 +1,7 @@
 package com.github.ros_java.android_ROS.controller;
 
 /**
- * Created by viki on 2/11/16.
+ * Created by erki on 2/11/16.
  */
 public class BridgeToPublisher {
 
@@ -12,7 +12,7 @@ public class BridgeToPublisher {
     public static String text = "";
     public static int progressBar = 0;
 
-
+    //From the left joystick
     public static void set_movement(int x, int y) {
         speed = (float) Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2))/25;
         /*
@@ -29,8 +29,10 @@ public class BridgeToPublisher {
 
 
     }
-    public static void set_turn(int x, int y) {
-        if(x <=1 && x >= -1 && y >= 8) kick = true;
+
+    //From the right joystick
+    public static void set_turn_and_kick(int x, int y) {
+        if(y >= 8) kick = true;
         else kick = false;
         double turnD = -1*x/10.0*Math.PI;
 

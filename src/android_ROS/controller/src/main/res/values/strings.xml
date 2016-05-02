@@ -15,6 +15,10 @@
        <string name="kick_range">0.155</string>
 
 
+    <!-- Used in main.xml-->
+    <string name="text_field">Enter message</string>
+    <string name="joystick_x">X</string>
+    <string name="joystick_y">Y</string>
 
 
 </resources>

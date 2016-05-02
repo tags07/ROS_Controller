@@ -13,62 +13,90 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         />
+    <Button
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_marginLeft="500sp"
+        android:layout_marginTop="200sp"
+        android:visibility="gone"/>
+
+    <org.ros.android.view.RosTextView
+        android:id="@+id/text"
+        android:textSize="20sp"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="50sp"
+        android:layout_marginLeft="200sp"/>
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
+
+
         <Joystick.DualJoystickView
             android:id="@+id/dualjoystickView"
             android:layout_width="fill_parent"
             android:layout_height="175dip"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dip" />
+            android:layout_gravity="center_horizontal"/>
         <TableLayout android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dip">
             <TableRow>
-                <TextView android:text="X" android:layout_width="50dip"
-                    android:layout_height="wrap_content"></TextView>
-                <TextView android:text="" android:id="@+id/TextViewX1"
-                    android:layout_width="150dip" android:layout_height="wrap_content"></TextView>
+                <TextView
+                    android:text="@string/joystick_x"
+                    android:layout_width="50dip"
+                    android:layout_height="wrap_content"/>
+                <TextView android:text=""
+                    android:id="@+id/TextViewX1"
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"/>
 
-                <TextView android:text="X" android:layout_width="50dip"
-                    android:layout_height="wrap_content"></TextView>
-                <TextView android:text="" android:id="@+id/TextViewX2"
-                    android:layout_width="100dip" android:layout_height="wrap_content"></TextView>
+                <TextView
+                    android:text="@string/joystick_x"
+                    android:layout_width="50dip"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text=""
+                    android:id="@+id/TextViewX2"
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"/>
             </TableRow>
             <TableRow>
-                <TextView android:text="Y" android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"></TextView>
-                <TextView android:text="" android:id="@+id/TextViewY1"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <TextView
+                    android:text="@string/joystick_y"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text=""
+                    android:id="@+id/TextViewY1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
 
-                <TextView android:text="Y" android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"></TextView>
-                <TextView android:text="" android:id="@+id/TextViewY2"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <TextView
+                    android:text="@string/joystick_y"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text=""
+                    android:id="@+id/TextViewY2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
             </TableRow>
 
                 <EditText
-
                     android:id="@+id/entered_text"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Enter message"
+                    android:hint="@string/text_field"
                     android:visibility="gone"
                     android:inputType="textEmailAddress"
                     android:cursorVisible="false"/>
-            <org.ros.android.view.RosTextView
-                android:id="@+id/text"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textSize="30dip" />
+
             <SeekBar
                 android:id="@+id/seekBar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
                 android:visibility="visible"
                 android:max="5" >
             </SeekBar>

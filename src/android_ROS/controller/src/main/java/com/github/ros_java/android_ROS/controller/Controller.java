@@ -15,37 +15,34 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import org.ros.android.BitmapFromCompressedImage;
-import org.ros.android.MessageCallable;
 import org.ros.android.RosActivity;
-import org.ros.android.view.RosTextView;
 import org.ros.node.NodeConfiguration;
 import org.ros.node.NodeMainExecutor;
 
-import java.util.List;
-
 import Joystick.DualJoystickView;
 import Joystick.JoystickMovedListener;
-import msgs.Ball;
-import msgs.ImageData;
 import sensor_msgs.CompressedImage;
 
 //Custom messages
 
 public class Controller extends RosActivity implements Thread.UncaughtExceptionHandler
 {
-    private RosTextView<ImageData> rosTextView;
+
 
     //displays the camera`s image
     private RosImageView2<CompressedImage> rosImageView;
 
+    //Publisher and talker
     private Publisherr talker;
+    private Listener listener;
+
+    //Joystick locations
     private TextView txtX1, txtY1;
     private TextView txtX2, txtY2;
+
+    //Inputs
     private EditText enteredText;
     private DualJoystickView joystick;
-    private String displayed_message;
-    private double lastChanceToKick;
-    private double shootingRange;
     private SeekBar bar;
 
     //bluetooth
@@ -85,11 +82,12 @@ public class Controller extends RosActivity implements Thread.UncaughtExceptionH
 
         defineJoySticks();
 
-        defineTextViews();
+
 
         defineImageViews();
 
         //defines publisher class
+        listener = new Listener(this);
         talker = new Publisherr(this);
     }
 
@@ -161,51 +159,10 @@ public class Controller extends RosActivity implements Thread.UncaughtExceptionH
         joystick.setOnJostickMovedListener(_listenerLeft, _listenerRight);
     }
 
-    public void defineTextViews() {
-        rosTextView = (RosTextView<ImageData>) findViewById(R.id.text);
-        rosTextView.setTopicName(getResources().getString(R.string.sub_data_topic));
-
-        rosTextView.setMessageType(ImageData._TYPE);
-        displayed_message = "";
-        lastChanceToKick = 5000;
 
 
-        rosTextView.setMessageToStringCallable(new MessageCallable<String, ImageData>() {
-            @Override
-            public String call(ImageData message) {
-                List<Ball> pallid = message.getBalls();
-                float smallest_length = 500;
-
-                for (int i = 0; i < pallid.size(); i++) {
-                    if (pallid.get(i).getDistance() < smallest_length) {
-                        smallest_length = pallid.get(i).getDistance();
-                    }
-                }
-
-                if (smallest_length < Double.parseDouble(getResources().getString(R.string.kick_range))) {
-                    displayed_message = "KICK";
-                    lastChanceToKick = System.currentTimeMillis();
-                } else {
-                    hideMessageDelay();
-                }
-                /*
-                if (pallid.size() > 0) {
-                    joined = String.valueOf(pallid.get(0).getDistance());
-                    Log.d("Balls", "aa" + joined.length());
-                }*/
 
 
-                return displayed_message;
-            }
-        });
-    }
-
-    public void hideMessageDelay() {
-        if(System.currentTimeMillis() - lastChanceToKick > 1000) {
-            Log.d("Time", "" + (System.currentTimeMillis() - lastChanceToKick));
-            displayed_message = "";
-        }
-    }
 
 
     public void defineImageViews() {
@@ -239,21 +196,21 @@ public class Controller extends RosActivity implements Thread.UncaughtExceptionH
     };
 
 
-
+    //right joystick
     private JoystickMovedListener _listenerRight = new JoystickMovedListener() {
 
         @Override
         public void OnMoved(int pan, int tilt) {
             txtX2.setText(Integer.toString(pan));
             txtY2.setText(Integer.toString(tilt));
-            BridgeToPublisher.set_turn(pan, -tilt);
+            BridgeToPublisher.set_turn_and_kick(pan, -tilt);
         }
 
         @Override
         public void OnReleased() {
             txtX2.setText("released");
             txtY2.setText("released");
-            BridgeToPublisher.set_turn(0,0);
+            BridgeToPublisher.set_turn_and_kick(0,0);
         }
 
         public void OnReturnedToCenter() {
@@ -271,8 +228,8 @@ public class Controller extends RosActivity implements Thread.UncaughtExceptionH
         nodeConfiguration.setMasterUri(getMasterUri());
 
         //starts subscribers and publishers
-        nodeMainExecutor.execute(rosTextView, nodeConfiguration);
-        nodeMainExecutor.execute(rosImageView, nodeConfiguration);
+        nodeMainExecutor.execute(listener.rosTextView, nodeConfiguration);
+        //nodeMainExecutor.execute(rosImageView, nodeConfiguration);
         nodeMainExecutor.execute(talker, nodeConfiguration);
 
     }
@@ -373,7 +330,7 @@ public class Controller extends RosActivity implements Thread.UncaughtExceptionH
         Log.d("Right Stick Y", bluetoothContrY2 + "");
         Log.d("Right Stick X", bluetoothContrX2 + "");
         BridgeToPublisher.set_movement((int) bluetoothContrX1, (int) -bluetoothContrY1);
-        BridgeToPublisher.set_turn((int) bluetoothContrX2, (int) -bluetoothContrY2);
+        BridgeToPublisher.set_turn_and_kick((int) bluetoothContrX2, (int) -bluetoothContrY2);
         return super.onGenericMotionEvent(event);
     }
 }
